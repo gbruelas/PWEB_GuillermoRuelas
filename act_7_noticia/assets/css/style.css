@@ -1,0 +1,41 @@
+/* 
+Guillermo Ruelas Buenrostro
+Programación Web
+Actividad 7 - Noticia  
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section{
+    color: red;
+}
+
+#topic{
+    color: gray;
+}
+
+img{
+    border-bottom: 5px solid red;
+    height: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.underline-class{
+    text-decoration: underline red;
+}
+
+.underline-bold-class{
+    font-weight: bold;
+    text-decoration: underline red;
+}
+
+.bold-class{
+    font-weight: bold;
+}
+
+.gray-italic-class{
+    color: gray;
+    font-style: italic;
+}
