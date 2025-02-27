@@ -1,0 +1,928 @@
+/* Guillermo Ruelas Buenrostro */
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cadetblue;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color: inherit;
+}
+
+.table{
+    background-color: solid transparent;
+    position: absolute;
+    width: 1840px;
+    height: 1240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+.abreviation{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.element{
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.no_metales_reactivos{
+    background-color: rgb(131, 189, 73);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.no_metales_reactivos:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+.metales_alcalinos{
+    background-color: rgb(196, 58, 58);
+    border: 3px solid white;
+    color: white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.metales_alcalinos:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.metales_alcalinoterreos{
+    background-color: rgb(218, 151, 18);
+    border: 3px solid white;
+    color: white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.metales_alcalinoterreos:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.metales_transicionales{
+    background-color: rgb(121, 194, 226);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.metales_transicionales:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.lantanidos{
+    background-color: rgb(0, 146, 209);
+    border: 3px solid white;
+    color: white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.lantanidos:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.actonoides{
+    background-color: rgb(0, 209, 160);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.actonoides:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.propiedades_desconocidas{
+    background-color: rgb(188, 188, 188);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.propiedades_desconocidas:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.metales_postransicionales{
+    background-color: rgb(160, 107, 160);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.metales_postransicionales:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.metaloides{
+    background-color: rgb(252, 224, 65);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.metaloides:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+.gases_nobles{
+    background-color: rgb(222, 121, 182);
+    border: 3px solid white;
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.gases_nobles:hover{
+    transform: scale(1.1); 
+    z-index: 100;
+}
+
+/* Columna 1 */
+
+#h{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+#li{
+    position: absolute;
+    top: 295px;
+    left: 50px;
+}
+
+#na{
+    position: absolute;
+    top: 390px;
+    left: 50px;
+}
+
+#k{
+    position: absolute;
+    top: 485px;
+    left: 50px;
+}
+
+#rb{
+    position: absolute;
+    top: 580px;
+    left: 50px;
+}
+
+#cs{
+    position: absolute;
+    top: 675px;
+    left: 50px;
+}
+
+#fr{
+    position: absolute;
+    top: 770px;
+    left: 50px;
+}
+
+/* Columna 2 */
+
+#be{
+    position: absolute;
+    top: 295px;
+    left: 145px;
+}
+
+#mg{
+    position: absolute;
+    top: 390px;
+    left: 145px;
+}
+
+#ca{
+    position: absolute;
+    top: 485px;
+    left: 145px;
+}
+
+#sr{
+    position: absolute;
+    top: 580px;
+    left: 145px;
+}
+
+#ba{
+    position: absolute;
+    top: 675px;
+    left: 145px;
+}
+
+#ra{
+    position: absolute;
+    top: 770px;
+    left: 145px;
+}
+
+/* Columna 3 */
+
+#sc{
+    position: absolute;
+    top: 485px;
+    left: 240px;
+}
+
+#y{
+    position: absolute;
+    top: 580px;
+    left: 240px;
+}
+
+#la{
+    position: absolute;
+    top: 675px;
+    left: 240px;
+}
+
+#ac{
+    position: absolute;
+    top: 770px;
+    left: 240px;
+}
+
+/* Columna 4 */
+
+#ti{
+    position: absolute;
+    top: 485px;
+    left: 365px;
+}
+
+#zr{
+    position: absolute;
+    top: 580px;
+    left: 365px;
+}
+
+#hf{
+    position: absolute;
+    top: 675px;
+    left: 365px;
+}
+
+#rf{
+    position: absolute;
+    top: 770px;
+    left: 365px;
+}
+
+#ce{
+    position: absolute;
+    top: 895px;
+    left: 365px;
+}
+
+#th{
+    position: absolute;
+    top: 985px;
+    left: 365px;
+}
+
+/* Columna 5 */
+
+#v{
+    position: absolute;
+    top: 485px;
+    left: 460px;
+}
+
+#nb{
+    position: absolute;
+    top: 580px;
+    left: 460px;
+}
+
+#ta{
+    position: absolute;
+    top: 675px;
+    left: 460px;
+}
+
+#db{
+    position: absolute;
+    top: 770px;
+    left: 460px;
+}
+
+#pr{
+    position: absolute;
+    top: 895px;
+    left: 460px;
+}
+
+#pa{
+    position: absolute;
+    top: 985px;
+    left: 460px;
+}
+
+/* Columna 6 */
+
+#cr{
+    position: absolute;
+    top: 485px;
+    left: 555px;
+}
+
+#mo{
+    position: absolute;
+    top: 580px;
+    left: 555px;
+}
+
+#w{
+    position: absolute;
+    top: 675px;
+    left: 555px;
+}
+
+#sg{
+    position: absolute;
+    top: 770px;
+    left: 555px;
+}
+
+#nd{
+    position: absolute;
+    top: 895px;
+    left: 555px;
+}
+
+#u{
+    position: absolute;
+    top: 985px;
+    left: 555px;
+}
+
+/* Columna 7 */
+
+#mn{
+    position: absolute;
+    top: 485px;
+    left: 650px;
+}
+
+#tc{
+    position: absolute;
+    top: 580px;
+    left: 650px;
+}
+
+#re{
+    position: absolute;
+    top: 675px;
+    left: 650px;
+}
+
+#bh{
+    position: absolute;
+    top: 770px;
+    left: 650px;
+}
+
+#pm{
+    position: absolute;
+    top: 895px;
+    left: 650px;
+}
+
+#np{
+    position: absolute;
+    top: 985px;
+    left: 650px;
+}
+
+/* Columna 8 */
+
+#fe{
+    position: absolute;
+    top: 485px;
+    left: 745px;
+}
+
+#ru{
+    position: absolute;
+    top: 580px;
+    left: 745px;
+}
+
+#os{
+    position: absolute;
+    top: 675px;
+    left: 745px;
+}
+
+#hs{
+    position: absolute;
+    top: 770px;
+    left: 745px;
+}
+
+#sm{
+    position: absolute;
+    top: 895px;
+    left: 745px;
+}
+
+#pu{
+    position: absolute;
+    top: 985px;
+    left: 745px;
+}
+
+/* Columna 9 */
+
+#co{
+    position: absolute;
+    top: 485px;
+    left: 840px;
+}
+
+#rh{
+    position: absolute;
+    top: 580px;
+    left: 840px;
+}
+
+#ir{
+    position: absolute;
+    top: 675px;
+    left: 840px;
+}
+
+#mt{
+    position: absolute;
+    top: 770px;
+    left: 840px;
+}
+
+#eu{
+    position: absolute;
+    top: 895px;
+    left: 840px;
+}
+
+#am{
+    position: absolute;
+    top: 985px;
+    left: 840px;
+}
+
+/* Columna 10 */
+
+#ni{
+    position: absolute;
+    top: 485px;
+    left: 935px;
+}
+
+#pd{
+    position: absolute;
+    top: 580px;
+    left: 935px;
+}
+
+#pt{
+    position: absolute;
+    top: 675px;
+    left: 935px;
+}
+
+#ds{
+    position: absolute;
+    top: 770px;
+    left: 935px;
+}
+
+#gd{
+    position: absolute;
+    top: 895px;
+    left: 935px;
+}
+
+#cm{
+    position: absolute;
+    top: 985px;
+    left: 935px;
+}
+
+/* Columna 11 */
+
+#cu{
+    position: absolute;
+    top: 485px;
+    left: 1030px;
+}
+
+#ag{
+    position: absolute;
+    top: 580px;
+    left: 1030px;
+}
+
+#au{
+    position: absolute;
+    top: 675px;
+    left: 1030px;
+}
+
+#rg{
+    position: absolute;
+    top: 770px;
+    left: 1030px;
+}
+
+#tb{
+    position: absolute;
+    top: 895px;
+    left: 1030px;
+}
+
+#bk{
+    position: absolute;
+    top: 985px;
+    left: 1030px;
+}
+
+/* Columna 12 */
+
+#zn{
+    position: absolute;
+    top: 485px;
+    left: 1125px;
+}
+
+#cd{
+    position: absolute;
+    top: 580px;
+    left: 1125px;
+}
+
+#hg{
+    position: absolute;
+    top: 675px;
+    left: 1125px;
+}
+
+#cn{
+    position: absolute;
+    top: 770px;
+    left: 1125px;
+}
+
+#dy{
+    position: absolute;
+    top: 895px;
+    left: 1125px;
+}
+
+#cf{
+    position: absolute;
+    top: 985px;
+    left: 1125px;
+}
+
+/* Columna 13 */
+
+#b{
+    position: absolute;
+    top: 295px;
+    left: 1220px;
+}
+
+#ai{
+    position: absolute;
+    top: 390px;
+    left: 1220px;
+}
+
+#ga{
+    position: absolute;
+    top: 485px;
+    left: 1220px;
+}
+
+#in{
+    position: absolute;
+    top: 580px;
+    left: 1220px;
+}
+
+#tl{
+    position: absolute;
+    top: 675px;
+    left: 1220px;
+}
+
+#nh{
+    position: absolute;
+    top: 770px;
+    left: 1220px;
+}
+
+#ho{
+    position: absolute;
+    top: 895px;
+    left: 1220px;
+}
+
+#es{
+    position: absolute;
+    top: 985px;
+    left: 1220px;
+}
+
+/* Columna 14 */
+
+#c{
+    position: absolute;
+    top: 295px;
+    left: 1315px;
+}
+
+#si{
+    position: absolute;
+    top: 390px;
+    left: 1315px;
+}
+
+#ge{
+    position: absolute;
+    top: 485px;
+    left: 1315px;
+}
+
+#sn{
+    position: absolute;
+    top: 580px;
+    left: 1315px;
+}
+
+#pb{
+    position: absolute;
+    top: 675px;
+    left: 1315px;
+}
+
+#fl{
+    position: absolute;
+    top: 770px;
+    left: 1315px;
+}
+
+#er{
+    position: absolute;
+    top: 895px;
+    left: 1315px;
+}
+
+#fm{
+    position: absolute;
+    top: 985px;
+    left: 1315px;
+}
+
+/* Columna 15 */
+
+#n{
+    position: absolute;
+    top: 295px;
+    left: 1410px;
+}
+
+#p{
+    position: absolute;
+    top: 390px;
+    left: 1410px;
+}
+
+#as{
+    position: absolute;
+    top: 485px;
+    left: 1410px;
+}
+
+#sb{
+    position: absolute;
+    top: 580px;
+    left: 1410px;
+}
+
+#bi{
+    position: absolute;
+    top: 675px;
+    left: 1410px;
+}
+
+#mc{
+    position: absolute;
+    top: 770px;
+    left: 1410px;
+}
+
+#tm{
+    position: absolute;
+    top: 895px;
+    left: 1410px;
+}
+
+#md{
+    position: absolute;
+    top: 985px;
+    left: 1410px;
+}
+
+/* Columna 16 */
+
+#o{
+    position: absolute;
+    top: 295px;
+    left: 1505px;
+}
+
+#s{
+    position: absolute;
+    top: 390px;
+    left: 1505px;
+}
+
+#se{
+    position: absolute;
+    top: 485px;
+    left: 1505px;
+}
+
+#te{
+    position: absolute;
+    top: 580px;
+    left: 1505px;
+}
+
+#po{
+    position: absolute;
+    top: 675px;
+    left: 1505px;
+}
+
+#lv{
+    position: absolute;
+    top: 770px;
+    left: 1505px;
+}
+
+#yb{
+    position: absolute;
+    top: 895px;
+    left: 1505px;
+}
+
+#no{
+    position: absolute;
+    top: 985px;
+    left: 1505px;
+}
+
+/* Columna 17 */
+
+#f{
+    position: absolute;
+    top: 295px;
+    left: 1600px;
+}
+
+#cl{
+    position: absolute;
+    top: 390px;
+    left: 1600px;
+}
+
+#br{
+    position: absolute;
+    top: 485px;
+    left: 1600px;
+}
+
+#i{
+    position: absolute;
+    top: 580px;
+    left: 1600px;
+}
+
+#at{
+    position: absolute;
+    top: 675px;
+    left: 1600px;
+}
+
+#ts{
+    position: absolute;
+    top: 770px;
+    left: 1600px;
+}
+
+#lu{
+    position: absolute;
+    top: 895px;
+    left: 1600px;
+}
+
+#lr{
+    position: absolute;
+    top: 985px;
+    left: 1600px;
+}
+
+/* Columna 18 */
+
+#he{
+    position: absolute;
+    top: 200px;
+    left: 1695px;
+}
+
+#ne{
+    position: absolute;
+    top: 295px;
+    left: 1695px;
+}
+
+#ar{
+    position: absolute;
+    top: 390px;
+    left: 1695px;
+}
+
+#kr{
+    position: absolute;
+    top: 485px;
+    left: 1695px;
+}
+
+#xe{
+    position: absolute;
+    top: 580px;
+    left: 1695px;
+}
+
+#rn{
+    position: absolute;
+    top: 675px;
+    left: 1695px;
+}
+
+#og{
+    position: absolute;
+    top: 770px;
+    left: 1695px;
+}
