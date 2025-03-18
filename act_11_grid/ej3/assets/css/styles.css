@@ -1,0 +1,112 @@
+.container{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    outline: 10px solid white;
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.box{
+    color: #FFF;
+    text-align: center;
+}
+
+.purple{
+    background-color: purple;
+    grid-column: 1/17;
+    grid-row: 1/2;
+}
+
+.red1{
+    background-color: red;
+    grid-column: 9/13;
+    grid-row: 5/7;
+}
+
+.red2{
+    background-color: red;
+    grid-column: 9/13;
+    grid-row: 7/9;
+}
+
+.green{
+    background-color: green;
+    grid-column: 5/17;
+    grid-row: 2/3;
+}
+
+.violet1{
+    background-color: violet;
+    grid-column: 5/7;
+    grid-row: 5/7;
+}
+
+.violet2{
+    background-color: violet;
+    grid-column: 7/9;
+    grid-row: 5/7;
+}
+
+.violet3{
+    background-color: violet;
+    grid-column: 5/7;
+    grid-row: 7/9;
+}
+
+.violet4{
+    background-color: violet;
+    grid-column: 7/9;
+    grid-row: 7/9;
+}
+
+.violet5{
+    background-color: violet;
+    grid-column: 13/15;
+    grid-row: 5/7;
+}
+
+.violet6{
+    background-color: violet;
+    grid-column: 15/17;
+    grid-row: 5/7;
+}
+
+.violet7{
+    background-color: violet;
+    grid-column: 13/15;
+    grid-row: 7/9;
+}
+
+.violet8{
+    background-color: violet;
+    grid-column: 15/17;
+    grid-row: 7/9;
+}
+
+.orange1{
+    background-color: orange;
+    grid-column: 17/18;
+    grid-row: 1/9;
+}
+
+.orange2{
+    background-color: orange;
+    grid-column: 1/5;
+    grid-row: 2/9;
+}
+
+.blue1{
+    background-color: lightskyblue;
+    grid-column: 5/11;
+    grid-row: 3/5;
+}
+
+.blue2{
+    background-color: lightskyblue;
+    grid-column: 11/17;
+    grid-row: 3/5;
+}
