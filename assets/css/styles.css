@@ -1,0 +1,79 @@
+.contenedor-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.contenedor-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #FFF;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-grow: 1;
+    padding: 20px;
+    z-index: 50;
+}
+
+.contenedor-main a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.contenedor-footer a, h3{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-list a{
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Para que se adapte a pantallas mas pequeñas como tablets o celulares, o al hacer zoom al navegador */
+@media (max-width: 1024px) {
+    
+    .menu {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+}
