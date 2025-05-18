@@ -1,0 +1,107 @@
+/* Para los cards de la página principal (sin iniciar sesión) */
+.custom-card-width {
+    width: 26rem;
+    max-width: 100%; /* Para que sea responsive */
+}
+
+/* Darle efecto blur al header (menú) cuando hace scroll */
+.header-scroll-blur {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilos para el menú de hamburguesa (pantallas pequeñas) */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    display: none; /* Oculto por defecto */
+}
+
+/* Solo es para que el footer siempre este abajo, haya contenido o no */
+.full{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Botón flotante */
+.fab-button {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    padding: 12px 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.fab-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Para que la barra de progreso del inicio no se vea tan pequeña */
+.custom-progress{
+    height: 25px;
+}
+
+/* Botón responsivo para pantallas medianas */
+@media (max-width: 1024px) {
+    .fab-button {
+        bottom: 30px;
+        right: 15px;
+        padding: 10px 12px;
+    }
+}
+
+/* Mostrar botón hamburguesa solo en pantallas pequeñas */
+@media (max-width: 992px) {
+    .navbar-toggler {
+        display: block;
+    }
+    
+    /* Ocultar menú principal en celulares */
+    .d-none.d-lg-flex {
+        display: none !important;
+    }
+    
+    /* Ocultar botón cerrar sesión en celulares (fuera del menú) */
+    .text-end.d-none.d-lg-block {
+        display: none !important;
+    }
+    
+    /* Estilo para el menú desplegado en celulares */
+    .navbar-collapse.collapse:not(.show) {
+        display: none;
+    }
+    
+    .nav.flex-column {
+        flex-direction: column !important;
+    }
+    
+    .nav.flex-column li {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Estilo para el botón de cerrar sesión dentro del menú desplegable */
+    .nav.flex-column li .btn {
+        text-align: center;
+    }
+    
+    /* Sección actual en pantallas pequeñas */
+    .d-lg-none.fs-5 {
+        padding-left: 0.5rem;
+    }
+
+    .burger-size{
+        font-size: 1.5rem;
+    }
+}
